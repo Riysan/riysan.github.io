@@ -1,1 +1,86 @@
-<h1>TOP</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Github Pages</title>
+</head>
+<body>
+    <main class="container">
+        <div class="top" style="text-align: center;">
+            <span class="neon flash">G<span>G</span></span>
+            <span class="neon flash">i<span>i</span></span>
+            <span class="neon flash">t<span>t</span></span>
+            <span class="neon flash">h<span>h</span></span>
+            <span class="neon flash">u<span>u</span></span>
+            <span class="neon flash">b<span>b</span></span>
+            <br/>
+            <span class="neon flash">P<span>P</span></span>
+            <span class="neon flash">a<span>a</span></span>
+            <span class="neon flash">g<span>g</span></span>
+            <span class="neon flash">e<span>e</span></span>
+            <span class="neon flash">s<span>s</span></span>
+        </div>
+    </main>
+    <style>
+        *{
+            font-family: "Righteous", cursive;
+        }
+
+        html,body{
+            margin: 0;
+            padding: 0;
+            background-color:  #333333;
+            background: linear-gradient(109.92558065818434deg, rgb(0, 48, 60) 30.208333333333336%, rgb(61, 13, 41) 71.875%);
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .container{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .neon {
+            position: relative;
+            display: inline-block;
+            color: transparent;
+            -webkit-text-stroke: 1.5px #0f0;
+            text-shadow: 0 0 50px rgba(0,255,0,.5);
+        }
+        
+        .neon span{
+            position: absolute;
+            top: 4%;
+            left: 8%;
+            opacity: .3;
+        }
+
+        .flash{
+            animation: flash-anime 3s linear infinite;
+        }
+        
+        @keyframes flash-anime {
+            0%{opacity: 1;}
+            50%{opacity: 1;}
+            51%{opacity: 0.3;}
+            52%{opacity: 1;}
+            75%{opacity: 1;}
+            76%{opacity: 0.6;}
+            77%{opacity: 1;}
+            78%{opacity: 0.3;}
+            79%{opacity: 1;}
+        }
+
+        .top{
+            font-size: calc(80vw / 6);
+        }
+    </style>
+</body>
+</html>
